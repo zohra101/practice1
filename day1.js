@@ -10,18 +10,15 @@ function practice1() {
 
 function practice2() {
     debugger;
-   const partyGuest1 = ["Alex", 1, "yes"]
-   let index = 0;
+    const partyGuest1 = ["Alex", 1, "yes"]
+    let index = 0;
+    let partyGuestInfo = "";
 
- for  (len = partyGuest1.length; 
-        index = len;
-        index++)
-      
-    // {   let partyGuestInfo = "";
-        const partyGuestInfo += partyGuest1[index] + ", "; 
+for (len = partyGuest1.length; index = len; index++)
+    {   
+        partyGuestInfo += partyGuest1[index] + ", "; 
         return partyGuestInfo;
         // document.write(partyGuestInfo);
     }
-
 }
  

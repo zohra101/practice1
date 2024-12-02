@@ -9,16 +9,48 @@ function practice1() {
 }
 
 function practice2() {
-    debugger;
-    const partyGuest1 = ["Alex", 1, "yes"]
+    //Define the array
+    const partyGuest1 = ["Alex", 1, true];
+    //Set the starting index value
     let index = 0;
-    let partyGuestInfo = "";
+     //Initialize partyGuestInfo as an empty string
+    let partyGuestInfo = ""; 
 
-for (len = partyGuest1.length; index = len; index++)
-    {   
+    //Run the loop to parse the array
+    //As long as the index is less than the lenght of the array, run the loop
+    for (len = partyGuest1.length; index < len; index++) {   
+        //Add each value from the array with a comma and space after it
         partyGuestInfo += partyGuest1[index] + ", "; 
-        return partyGuestInfo;
-        // document.write(partyGuestInfo);
     }
+    //Trim the final comma and space
+    partyGuestInfo = partyGuestInfo.slice(0, -2); 
+    //Output the final value
+    document.write(partyGuestInfo);
+}
+
+function practice3() {
+    //Create three objects with three properties each
+    debugger;
+    const partyGuest1 = {name: "Alex", numGuests: 2, attending: true};
+    const partyGuest2 = {name: "Jim", numGuests: 1, attending: true};
+    const partyGuest3 = {name: "Lily", numGuests: 1, attending: false};
+
+    //Put the objects in an array
+    const partyGuests = [partyGuest1, partyGuest2, partyGuest3];
+
+    //Set the starting index value
+    let index = 0;
+     //Initialize partyGuestInfo as an empty string
+    let partyGuestInfo = ""; 
+
+    //Run the loop to parse the array
+    //As long as the index is less than the lenght of the array, run the loop
+    for (let len = partyGuests.length; index < len; index++) {   
+        //Add each value from the array with a comma and space after it
+        partyGuestInfo += `Name: ${partyGuests[index].name}<br> Number of Guests: ${partyGuests[index].numGuests}<br>Attending: ${partyGuests[index].attending}<br><br>`;
+    }
+
+    //Output the final value
+    document.write(partyGuestInfo);
 }
  

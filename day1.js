@@ -30,7 +30,6 @@ function practice2() {
 
 function practice3() {
     //Create three objects with three properties each
-    debugger;
     const partyGuest1 = {name: "Alex", numGuests: 2, attending: true};
     const partyGuest2 = {name: "Jim", numGuests: 1, attending: true};
     const partyGuest3 = {name: "Lily", numGuests: 1, attending: false};

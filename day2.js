@@ -25,7 +25,7 @@ const books = [book1, book2, book3]
         bookInfo += `Name: ${books[index].title}<br> 
         Author: ${books[index].authorLast}, ${books[index].authorFirst}<br>
         In Stock: ${books[index].inStock}<br>
-        Quantity: ${boooks[index].quantity}<br><br>`;
+        Quantity: ${books[index].quantity}<br><br>`;
         }
     document.write(bookInfo);
 }

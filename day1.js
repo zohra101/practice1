@@ -46,7 +46,9 @@ function practice3() {
     //As long as the index is less than the lenght of the array, run the loop
     for (let len = partyGuests.length; index < len; index++) {   
         //Add each value from the array with a comma and space after it
-        partyGuestInfo += `Name: ${partyGuests[index].name}<br> Number of Guests: ${partyGuests[index].numGuests}<br>Attending: ${partyGuests[index].attending}<br><br>`;
+        partyGuestInfo += `Name: ${partyGuests[index].name}<br> 
+        Number of Guests: ${partyGuests[index].numGuests}<br>
+        Attending: ${partyGuests[index].attending}<br><br>`;
     }
 
     //Output the final value

@@ -28,6 +28,25 @@ function practice2() {
     document.write(partyGuestInfo);
 }
 
+function practice2b() {
+    //Define the array
+    const partyGuest1Array = [];
+    partyGuest1Array.push("Alex"); 
+    partyGuest1Array.push(1); 
+    partyGuest1Array.push(true);
+
+    //Set the starting index value
+    const count = partyGuest1Array.length
+
+    //Run the loop to parse the array
+    //As long as the index is less than the lenght of the array, run the loop
+    for (let index = 0; index < count; index++) {   
+        //Add each value from the array with a comma and space after it
+       value = partyGuest1Array[index];
+    }
+    output();
+}
+
 function practice3() {
     //Create three objects with three properties each
     const partyGuest1 = {name: "Alex", numGuests: 2, attending: true};

@@ -17,7 +17,7 @@ const book2 = {title: "Dragonsinger", authorLast: "McCaffrey", authorFirst:"Anne
 const book3 = {title: "Dragondrums", authorLast: "McCaffrey", authorFirst:"Anne", inStock: false, quantity: 0};
 
 const books = [book1, book2, book3]
-    
+
     let index=0;
     let bookInfo = "";
     

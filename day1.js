@@ -5,7 +5,7 @@ function practice1() {
         numAttendees: 1,
         rsvp: "yes"       
     }
-    document.write("Practice 1:  " + partyGuest.guestName + ", " + partyGuest.numAttendees + ", " + partyGuest.rsvp);
+    output("Practice 1:  " + partyGuest.guestName + ", " + partyGuest.numAttendees + ", " + partyGuest.rsvp);
 }
 
 function practice2() {
@@ -25,7 +25,7 @@ function practice2() {
     //Trim the final comma and space
     partyGuestInfo = partyGuestInfo.slice(0, -2); 
     //Output the final value
-    document.write(partyGuestInfo);
+    output(partyGuestInfo);
 }
 
 function practice2b() {
@@ -71,6 +71,6 @@ function practice3() {
     }
 
     //Output the final value
-    document.write(partyGuestInfo);
+    output(partyGuestInfo);
 }
  

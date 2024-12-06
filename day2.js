@@ -29,3 +29,49 @@ const books = [book1, book2, book3]
         }
     document.write(bookInfo);
 }
+
+//Practice 2 wih bracket notation
+function practice3() {
+    const myObject = {
+        property1: ["Dragonsong", 2, true],
+        property2: ["Dragonsinger", 3, true],
+        property3: ["Dragondrums", 0, false],
+    };
+
+    for (let propertyNumber = 1; propertyNumber <=3; propertyNumber++) {
+        const propertyName = `property${propertyNumber}`;
+        const array = myObject[propertyName];
+        const myString = array[0];
+        const myNumber= array[1];
+        const myBoolean = array[2];
+        output(`${myString}, ${myNumber}, ${myBoolean}, "outputTag"`);
+    }
+}
+
+//
+function practice4() {
+    debugger;
+    const book1 = { 
+            title: ["Dragonsong"],
+            author: ["McCaffrey, Anne"],
+            inStock: [true],
+            quantity: [1],
+    };
+
+    const book2 = { 
+        title: ["Dragonsinger"],
+        author: ["McCaffrey, Anne"],
+        inStock: [true],
+        quantity: [1],
+    };
+
+    const books = [book1, book2]
+
+    for (let index of books) {
+        booksAvailable += books[index];
+            for (let property in books[index]) {
+                bookInfo += book[number].${property};
+            }
+
+    }
+}

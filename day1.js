@@ -36,7 +36,7 @@ function practice2b() {
     partyGuest1Array.push(true);
 
     //Set the starting index value
-    const count = partyGuest1Array.length
+    const count = partyGuest1Array.length;
 
     //Run the loop to parse the array
     //As long as the index is less than the lenght of the array, run the loop
@@ -74,3 +74,38 @@ function practice3() {
     output("<br>Practice 3: " + partyGuestInfo);
 }
 
+function practice3b() {
+    const myPet = {
+        name: "Wolf",
+        age: 7,
+        forSale: false,
+        } ;
+    const mySelf = {
+        myName: "Alex",
+        age: 21,
+        married: true,
+        };
+    const myCar = {
+        name: "Apple",
+        age: 3,
+        forSale: false,
+        } ;
+    const myObjects = [];
+        myObjects.push(myPet);
+        myObjects.push(mySelf);
+        myObjects.push (myCar);
+
+    const count = myObjects. length;
+    for (let i = 0; i < count; i++) {
+    const car = myObjects[i];
+    const color = car.color;
+    const year = car.year;
+    const forSale = car.forSale;
+    const carNumber = i + 1;
+
+    output(`Car number ${carNumber} is: ‹br>`);
+    output(`The color is ${color}<br>`);
+    output(`The year is ${year}<br>`);
+    output(`Is the car for sale? ${forSale}<br>‹br>`);
+    }
+}

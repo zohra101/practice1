@@ -18,14 +18,14 @@ function practice2() {
 
     //Run the loop to parse the array
     //As long as the index is less than the lenght of the array, run the loop
-    for (len = partyGuest1.length; index < len; index++) {   
+    for (count = partyGuest1.length; index < count; index++) {   
         //Add each value from the array with a comma and space after it
         partyGuestInfo += partyGuest1[index] + ", "; 
     }
     //Trim the final comma and space
     partyGuestInfo = partyGuestInfo.slice(0, -2); 
     //Output the final value
-    output(partyGuestInfo);
+    output("<br>Practice 2: " + partyGuestInfo);
 }
 
 function practice2b() {
@@ -44,7 +44,7 @@ function practice2b() {
         //Add each value from the array with a comma and space after it
        value = partyGuest1Array[index];
     }
-    output();
+    output("<br>Practice 2b: " + partyGuestInfo);
 }
 
 function practice3() {
@@ -71,6 +71,6 @@ function practice3() {
     }
 
     //Output the final value
-    output(partyGuestInfo);
+    output("<br>Practice 3: " + partyGuestInfo);
 }
- 
+

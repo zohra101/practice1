@@ -1,3 +1,9 @@
+class Column {
+    openingTag = `"<div class = 'col' >"`;
+    closingTag = `"</div>"`;
+    innerHTML = `""`;
+}
+
 function practice1() {
     const grid1 = `<div class="container text-center m-3 p-5">
                             <div class="row">
@@ -6,44 +12,75 @@ function practice1() {
                                 <div class="col border border-2">Column 3</div>
                             </div>
                         </div>`;
-    window.practice1.innerHTML = grid1;
+    window.outputTag1.innerHTML = grid1;
 }
 
 function practice2() {
-    debugger;
-    let index = 0;
-    let columnString = '';
+    let columnString2 = "";
 
-        for (index < 3; index++;) {
-            columnString += `<div class="col border border-2">Column ${index}</div>`
+        for (row =0; row < 1; row++) {
+            for (col=0; col < 3; col++) {
+                columnString2 += `<div class="col border border-2">Column ${col}</div>`
+            }
+            const rowString2 =`<div class="row">${columnString2}</div>`;   
+            const bootstrapGrid = `<div class="container text-center m-3 p-5">` + rowString2;
+        window.outputTag2.innerHTML = bootstrapGrid;
+        }
+ }
+          
+function practice3() {
+debugger;
+let rowString3 = "";
+let columnString3 = "";
+
+    for (let row =0; row < 3; row++) {
+        for (let col=0; col < 3; col++) {
+           columnString3 += `<div class="col border border-2">Column ${col}</div>`;   
+            }
+        rowString3 +=`<div class="row">${columnString3}</div>`;
+        columnString3 = "";
+        }
+        window.outputTag3.innerHTML += `<div class="container text-center m-3 p-5">${rowString3}</div>`;
+}
+
+function practice3b() {
+    debugger;
+
+    let rows = "";
+    for (let rowNumber = 1; rowNumber <= 3; rowNumber++) {
+        let columns = "";
+        for (let columnNumber = 1; columnNumber <= 3; columnNumber++) {
+            columns += `<div class="col">COLUMN ${columnNumber}</div>`;
         }
 
-    const rowString = `<div class="row">${columnString}</div>`;   
-    const bootstrapGrid = `<div class="container text-center m-3 p-5">` + rowString;
-    window.bootstrapGrid.innerHTML = bootstrapGrid;
-}
-
-// function practice3() {}
-
-
-
-class Column {
-    openingTag = "<div class='col'>";
-    closingTag = "</div>";
-    innerHTML = "";
-
-    constructor(content = "") {
-       this.innerHTML = content;
+        rows += `<div class="row">${columns}</div>`;
     }
 
-    toString() {
-        return `${this.openingTag}${this.innerHTML}${this.closingTag}`;
+    const gridSystem = `
+        <div class="container">
+            ${rows}
+            </div>`;
+    output (gridSystem, "outputTag3");
+} 
+
+function practice4() {
+    debugger;
+
+    let rows = "";
+    for (let rowNumber = 1; rowNumber <= 3; rowNumber++) {
+        let columns = "";
+        for (let columnNumber = 1; columnNumber <= 3; columnNumber++) {
+            const column = new Column;
+            column. innerHTML = `COLUMN ${columnNumber}`;
+            columns += `${column.openingTag}${column.innerHTML}${column.closingTag}`;
+        }
+
+        rows += `<div class="row">${columns}</div>`;
     }
-}
 
-// function practice4() {}
-
-function practice5 () {
-    const column = new column ();
-    output(column, "outputTag5");
-}
+    const gridSystem = `
+        <div class="container">
+            ${rows}
+            </div>`;
+    output (gridSystem, "outputTag3");
+} 

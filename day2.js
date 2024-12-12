@@ -1,5 +1,6 @@
 function practice1() {
-const book = ["Dragonsong", "McCaffrey","Anne", true, 2];
+    debugger;
+    const book = ["Dragonsong", "McCaffrey","Anne", true, 2];
 
 let index=0;
 let bookInfo="";
@@ -44,34 +45,29 @@ function practice3() {
         const myString = array[0];
         const myNumber= array[1];
         const myBoolean = array[2];
-        output(`${myString}, ${myNumber}, ${myBoolean}, "outputTag"`);
+        output(`${myString}, ${myNumber}, ${myBoolean}`);
     }
 }
 
-//
+// 1. Create a function called practice4
+// 2.Use for in to loop through object properties
+// 3.Use for of to loop through array items
+// 4. Use nested loops to display each item
 function practice4() {
     debugger;
-    const book1 = { 
-            title: ["Dragonsong"],
-            author: ["McCaffrey, Anne"],
-            inStock: [true],
-            quantity: [1],
+    const books = {
+        One: ["Dragonsong", "McCaffrey Anne", true, 1],
+        Two: ["Dragonsinger", "McCaffrey Anne", true, 2],
+        Three: ["Dragondrums", "McCaffrey Anne", false, 0],
     };
 
-    const book2 = { 
-        title: ["Dragonsinger"],
-        author: ["McCaffrey, Anne"],
-        inStock: [true],
-        quantity: [1],
-    };
+    for (let bookNumber in books) {
+        const booksArray = books[bookNumber];
+        output(`Book ${bookNumber}  is`, "outputTag");
 
-    const books = [book1, book2]
-
-    for (let index of books) {
-        booksAvailable += books[index];
-            for (let property in books[index]) {
-                bookInfo += book[number].${property};
+            for (let item of booksArray) {
+                output(` ${item}, `, "outputTag");
             }
-
-    }
-}
+        output("<br>", "outputTag");    
+    } 
+}  

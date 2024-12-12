@@ -1,7 +1,7 @@
 //
-function output(message) {
-    window.outputTag.innerHTML += message;
-}
+// function output(message) {
+//     window.outputTag.innerHTML += message;
+// }
 
 //Bracket notation with default value
 function outputSpecifiedId(message, outputTag) {
@@ -12,3 +12,9 @@ function outputSpecifiedId(message, outputTag) {
 function outputDefault(message, outputTag = "outputTag") {
     window[outputTag].innerHTML += message;
 }
+
+function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+    if (shouldAppend) window[outputTag].innerHTML += message;
+    else window[outputTag] .innerHTML = message;
+}
+

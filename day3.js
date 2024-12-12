@@ -1,7 +1,7 @@
 class Column {
-    openingTag = `"<div class = 'col' >"`;
-    closingTag = `"</div>"`;
-    innerHTML = `""`;
+    openingTag = `<div class = 'col' >`;
+    closingTag = `</div>`;
+    innerHTML = "";
 }
 
 function practice1() {
@@ -29,7 +29,6 @@ function practice2() {
  }
           
 function practice3() {
-debugger;
 let rowString3 = "";
 let columnString3 = "";
 
@@ -44,8 +43,6 @@ let columnString3 = "";
 }
 
 function practice3b() {
-    debugger;
-
     let rows = "";
     for (let rowNumber = 1; rowNumber <= 3; rowNumber++) {
         let columns = "";
@@ -59,8 +56,8 @@ function practice3b() {
     const gridSystem = `
         <div class="container">
             ${rows}
-            </div>`;
-    output (gridSystem, "outputTag3");
+            </div><br>`;
+    output (gridSystem, "outputTag3b");
 } 
 
 function practice4() {
@@ -70,7 +67,7 @@ function practice4() {
     for (let rowNumber = 1; rowNumber <= 3; rowNumber++) {
         let columns = "";
         for (let columnNumber = 1; columnNumber <= 3; columnNumber++) {
-            const column = new Column;
+            const column = new Column();
             column. innerHTML = `COLUMN ${columnNumber}`;
             columns += `${column.openingTag}${column.innerHTML}${column.closingTag}`;
         }
@@ -82,5 +79,5 @@ function practice4() {
         <div class="container">
             ${rows}
             </div>`;
-    output (gridSystem, "outputTag3");
+    output (gridSystem, "outputTag4");
 } 

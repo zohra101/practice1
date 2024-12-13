@@ -2,6 +2,15 @@ class Column {
     openingTag = `<div class = 'col' >`;
     closingTag = `</div>`;
     innerHTML = "";
+
+    info(columnNumber) {
+        console.log("This is column " + columnNumber);
+    }
+
+    content() {
+        console.log("The content is: " + this.innerHTML);
+    }
+
 }
 
 function practice1() {
@@ -68,7 +77,9 @@ function practice4() {
         let columns = "";
         for (let columnNumber = 1; columnNumber <= 3; columnNumber++) {
             const column = new Column();
+            column.info(columnNumber);
             column. innerHTML = `COLUMN ${columnNumber}`;
+            column.content();
             columns += `${column.openingTag}${column.innerHTML}${column.closingTag}`;
         }
 

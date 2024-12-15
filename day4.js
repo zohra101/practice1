@@ -44,10 +44,9 @@ function handleSubmit(event = new Event()) {
         const radioInput = inputs[i];
         const value = radioInput.value;
         const isChecked = radioInput.checked;
-        const isDatatype = radioInput.name;
-
-        if (isDatatype = "datatype") {
-            if (isChecked) output(`${value}<br>`); 
-        }
+        const name = radioInput.name;
+        const isDatatype = name === "dataType";
+        
+        if (isChecked && isDatatype) output(`${value}<br>`); 
     }
  }
